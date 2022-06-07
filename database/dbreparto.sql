@@ -129,7 +129,8 @@ CREATE TABLE `perfil` (
   `estado_perf` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
+-- 
+--------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `productos`
