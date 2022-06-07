@@ -1,35 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparto de Delivery</title>
-    <link rel="shortcut icon" href="img/fast.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <section class="textos-header">
-            <h1>Potencia tus datos</h1>
-            <h2>Para tu pagina web</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,50.06 C149.99,150.22 349.21,-50.06 500.00,50.06 L500.00,150.22 L0.00,150.22 Z" style="stroke: none; fill: #08f;"></path></svg></div>
-    </header>
-        <main>
-            <section class="contenedor sobre-nosotros">
-                <h2>nuestro producto</h2>
-                <div class="contenedor sobre-nosotros">
-                    <img src="img/fast.png" alt="">
+<?php include "header.php" ?>
+
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-primary mb-4">Nos llamas, nosotros lo entregamos</h1>
+            <h1 class="text-white display-4 mb-5">Ahorrando su tiempo</h1>
+            <div class="mx-auto" style="width: 100%; max-width: 600px;"></div>
+        </div>
+    </div>
+    
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-primary mb-4">Ponte en contacto</h3>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>3QC6+54W, Jirón Dámaso Beraún, Huánuco 10001</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+51 987 654 321</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-primary mb-4">Enlaces</h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Información</h3>
+                <p>Ofrecemos servicios motorizados para la entrega a domicilio para las empresas que requieren de nuestros servicios</p>
+                <div class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy;2022 Servicio Delivery, Todos los derechos reservados</p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
+
