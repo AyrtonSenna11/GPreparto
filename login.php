@@ -1,19 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="row">
-        <div class="col-sm-12 col-md-3">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
-        Log in
-        </button>
-        </div>
+<?php
+include("index.php");
+?>
         <div class="modal fade" id="login" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -48,14 +35,20 @@
                                         {
                                             echo "
                                             <div class='form-check'>
-                                                <input class='form-check-input' type='radio' name='perfil_usua' id='perfil_usua' value='".$perfil['id_perf']."'>
-                                                <label class='form-check-label' for='gridRadios1'>".$perfil['nombre_perf']."</label>
+                                                <input class='form-check-input' type='radio' name='perfil_usua' id='perfil".$perfil['id_perf']."' value='".$perfil['id_perf']."'>
+                                                <label class='form-check-label' for='perfil".$perfil['id_perf']."'>".$perfil['nombre_perf']."</label>
                                             </div>";
                                         }
                                     }
                                     ?>
                                 </div>
                             </fieldset>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="mantenersesion">
+                                <label class="form-check-label" for="mantenersesion">
+                                Recordarme
+                                </label>
+                            </div>
                             <input type="submit" value="Iniciar Sesion" class="btn btn-success">
                         </form>
                     </div>

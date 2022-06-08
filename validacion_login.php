@@ -18,10 +18,10 @@ if($filas)
 {
     switch($perfil)
     {
-        case 1: header("#");break;
-        case 2: header("#");break;
-        case 3: header("#");break;
-        case 4: header("#");break;
+        case 1: header("admin.php");break;
+        case 2: header("index_gerente.php");break;
+        case 3: header("index_administrador.php");break;
+        case 4: header("index_repartidor.php");break;
     }
 }else
 {
