@@ -1,12 +1,4 @@
 <?php include "header.php" ?>
-
-    <div class="jumbotron jumbotron-fluid mb-5">
-        <div class="container text-center py-5">
-            <h1 class="text-primary mb-4">Nos llamas, nosotros lo entregamos</h1>
-            <h1 class="text-white display-4 mb-5">Ahorrando su tiempo</h1>
-            <div class="mx-auto" style="width: 100%; max-width: 600px;"></div>
-        </div>
-    </div>
     
     <div class="container-fluid py-5">
         <div class="container">
@@ -29,11 +21,28 @@
         </div>   
     </div>
 
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="img/camion.gif" alt="">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Por qué elegirnos</h6>
+                    <h1 class="mb-4">Ofrecemos reparto de delivery motorizado</h1>
+                    <p class="mb-4">Personal repartidor capacitado para el cumplimiento de entrega a domicilio</p>
+                    <ul class="list-inline">
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Tarifas por kilometrajes</h6>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Servicio Motorizado</h6></li>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Atención 24/7</h6></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid pt-5">
         <div class="container">
-            <div class="text-center pb-2">
-                <h6 class="text-primary text-uppercase font-weight-bold">Nuestros Servicios</h6>
-            </div>
             <div class="row pb-3">
                 <div class="text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
@@ -41,6 +50,59 @@
                         <h6 class="text-white font-weight-medium m-0">Motorizado</h6>
                     </div>
                     <p>Es un servicio que implica la solicitud y asignación, estás unidades están disponibles las 24 horas, la ventaja es que se tiene un control ante cualquier cambio que se necesite, con este servicio podrá confiar en nosotros para ofrecerle una rápida entrega</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Equipo de Entrega</h6>
+                <h1 class="mb-4">Conozca a nuestro equipo, ellos confían en nosotros</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="img/mimo.png" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">JUAN MANUEL QUIROZ</h5>
+                                <span>Servicio de Transporte motorizado para entrega a domicilio</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="img/momi.png" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">ALL RASHIB, MOHAMED</h5>
+                                <span>Servicio de Transporte motorizado para entrega a domicilio</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="img/simo.png" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">CHRISTIAN FABRICIO JUAREZ</h5>
+                                <span>Servicio de Transporte motorizado para entrega a domicilio</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
