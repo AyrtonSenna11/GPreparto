@@ -10,7 +10,7 @@ $validacion=mysqli_query($db,$select_consulta);
 $filas=mysqli_num_rows($validacion);
 if($filas)
 {
-    include("header_iniciado.php");
+    header("Location: iniciadoSesion/producto_iniciado.php");
 }else
 {
     ?>
@@ -18,10 +18,8 @@ if($filas)
         <strong>Datos incorrectos!</strong> Ingrese correctamente su correo, contraseña o perfil.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-    <?php
-    include("header.php");
+    <?php include("index.php");
 }
 mysqli_free_result($validacion);
 mysqli_close($db);
-include("iniciadoSesion/index_iniciado.php")
 ?>

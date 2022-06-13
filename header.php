@@ -44,16 +44,18 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                             <div class="navbar-nav m-auto py-0">
-                                <a href="index.php" class="nav-item nav-link"><i class="fa-solid fa-house-chimney"></i> Inicio</a>
-                                <a href="nosotros.php" class="nav-item nav-link"><i class="fa-solid fa-users"></i> Nosotros</a>
-                                <a href="producto.php" class="nav-item nav-link"><i class="fa-solid fa-list"></i> Producto</a>
-                                <a href="contacto.php" class="nav-item nav-link"><i class="fa-solid fa-headset"></i> Contacto</a>
+                                <a href="index.php" class="nav-item nav-link <?php if($active_navbar==1){echo "active";} ?>"><i class="fa-solid fa-house-chimney"></i> Inicio</a>
+                                <a href="nosotros.php" class="nav-item nav-link <?php if($active_navbar==2){echo "active";} ?>"><i class="fa-solid fa-users"></i> Nosotros</a>
+                                <a href="producto.php" class="nav-item nav-link <?php if($active_navbar==3){echo "active";} ?>"><i class="fa-solid fa-list"></i> Producto</a>
+                                <a href="contacto.php" class="nav-item nav-link <?php if($active_navbar==4){echo "active";} ?>"><i class="fa-solid fa-headset"></i> Contacto</a>
+                                <a href="#" class="nav-item nav-link <?php if($active_navbar==5){echo "active";} ?>"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
                                 <div class="dropdown" data-bs-target="#login">
                                     <a class="nav-item nav-link dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                     <i class="fa-solid fa-user"></i> Iniciar Sesion</a>
-                                    <form action="login_cliente.php" method="post" class="dropdown-menu p-4" id="login">
+                                    <form action="validacion_cliente.php" method="post" class="dropdown-menu p-4" id="login">
                                         <div class="mb-3">
                                             <label for="correo" class="form-label">Correo Electronico</label>
+                                            <input type="hidden" name="comprobar" valor="">
                                             <input type="text" class="form-control" name="nick_usua" id="correo" placeholder="correo@ejemplo.com">
                                         </div>
                                         <div class="mb-3">
@@ -67,28 +69,11 @@
                                                 Remember me
                                                 </label>
                                             </div>
-                                        </div>
-                                        <?php
-                                            if(isset($_POST['nick_usua'])==false){}
-                                            else
-                                            {
-                                                echo "<input type='hidden' name='id_usua'";
-                                                include("conexiondb.php");
-                                                $select="SELECT * from usuarios";
-                                                $valores=mysqli_query($db,$select);
-                                                foreach($valores as $datos)
-                                                {
-                                                    if($_POST['nick_usua']==$datos['nick_usua'])
-                                                    {
-                                                        echo "value='".$datos['id_usua']."'>";
-                                                    }
-                                                }
-                                            }
-                                        ?>    
+                                        </div> 
                                         <input type="submit" value="Ingresar" class="btn btn-primary">
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">¿Eres nuevo? Registrese</a>
-                                        <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                                        <a class="dropdown-item" href="registro_cliente.php">¿Eres nuevo? Registrese</a>
+                                        <a class="dropdown-item" href="cambiar_contraseña.php">¿Olvidaste tu contraseña?</a>
                                     </form>
                                 </div>  
                             </div>

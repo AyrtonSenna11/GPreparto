@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php $active_navbar=2;include "header.php" ?>
     
     <div class="container-fluid py-5">
         <div class="container">

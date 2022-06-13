@@ -1,4 +1,4 @@
-<?php include "../header_iniciado.php" ?>
+<?php include "header_iniciado.php" ?>
 
     <div class="container-fluid pt-5">
         <div class="container">

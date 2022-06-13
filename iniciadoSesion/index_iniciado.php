@@ -1,4 +1,4 @@
-
+<?php $active_navbar=1;include "header_iniciado.php" ?>
     <div class="jumbotron jumbotron-fluid mb-5">
         <div class="container text-center py-5">
             <h1 class="text-primary mb-4">Nos llamas, nosotros lo entregamos</h1>

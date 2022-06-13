@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php $active_navbar=1;include "header.php" ?>
 
     <div class="jumbotron jumbotron-fluid mb-5">
         <div class="container text-center py-5">
