@@ -48,7 +48,7 @@
                                 <a href="nosotros.php" class="nav-item nav-link <?php if($active_navbar==2){echo "active";} ?>"><i class="fa-solid fa-users"></i> Nosotros</a>
                                 <a href="producto.php" class="nav-item nav-link <?php if($active_navbar==3){echo "active";} ?>"><i class="fa-solid fa-list"></i> Producto</a>
                                 <a href="contacto.php" class="nav-item nav-link <?php if($active_navbar==4){echo "active";} ?>"><i class="fa-solid fa-headset"></i> Contacto</a>
-                                <a href="#" class="nav-item nav-link <?php if($active_navbar==5){echo "active";} ?>"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                                <a href="carrito.php" class="nav-item nav-link <?php if($active_navbar==5){echo "active";} ?>"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
                                 <div class="dropdown" data-bs-target="#login">
                                     <a class="nav-item nav-link dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                     <i class="fa-solid fa-user"></i> Iniciar Sesion</a>
