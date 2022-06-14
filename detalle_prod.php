@@ -44,7 +44,7 @@ include("header.php");
                                     
                                     <div class="d-flex justify-content-center align-items-center">
                                         <div class="btn-group">
-                                        <p><a href="cart.php" class="buy-now btn btn-lg btn-danger"><i class="bi bi-cart-check-fill"></i>Añadir al carrito</a></p>
+                                        <p><a href="carrito.php" class="buy-now btn btn-lg btn-danger"><i class="bi bi-cart-check-fill"></i>Añadir al carrito</a></p>
                                         </div> 
                                     </div>
                                 </div>
