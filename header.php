@@ -9,19 +9,19 @@
     <link rel="shortcut icon" href="img/fast.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
-    <!-- JavaScript Libraries -->
+    <!-- JavaScript Libraries >
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script -->
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts >
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" -->
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51e0a40de0.js" crossorigin="anonymous"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" >
@@ -33,85 +33,53 @@
     
 </head>
 <body>
-    <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+51 987 654 321</small>
-                    <small class="px-3">|</small>
+    <header class="container mw-100">
+        <div class="row">
+            <div class="container-fluid p-0">
+                <div class="col-12 col-md-12 mw-100">
+                    <nav class="navbar navbar-expand-md bg-light navbar-light py-3 py-lg-0 px-lg-5">
+                        <h1 class="m-0 display-5 text-uppercase text-primary"><img src="img/fast.png" width="75px">DELIVERY FASTER</h1>                            
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                            <div class="navbar-nav m-auto py-0">
+                                <a href="index.php" class="nav-item nav-link <?php if($active_navbar==1){echo "active";} ?>"><i class="fa-solid fa-house-chimney"></i> Inicio</a>
+                                <a href="nosotros.php" class="nav-item nav-link <?php if($active_navbar==2){echo "active";} ?>"><i class="fa-solid fa-users"></i> Nosotros</a>
+                                <a href="producto.php" class="nav-item nav-link <?php if($active_navbar==3){echo "active";} ?>"><i class="fa-solid fa-list"></i> Producto</a>
+                                <a href="contacto.php" class="nav-item nav-link <?php if($active_navbar==4){echo "active";} ?>"><i class="fa-solid fa-headset"></i> Contacto</a>
+                                <a href="#" class="nav-item nav-link <?php if($active_navbar==5){echo "active";} ?>"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                                <div class="dropdown" data-bs-target="#login">
+                                    <a class="nav-item nav-link dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <i class="fa-solid fa-user"></i> Iniciar Sesion</a>
+                                    <form action="validacion_cliente.php" method="post" class="dropdown-menu p-4" id="login">
+                                        <div class="mb-3">
+                                            <label for="correo" class="form-label">Correo Electronico</label>
+                                            <input type="hidden" name="comprobar" valor="">
+                                            <input type="text" class="form-control" name="nick_usua" id="correo" placeholder="correo@ejemplo.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="contraseña" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" name="password_usua" id="contraseña" placeholder="contraseña">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                                <label class="form-check-label" for="dropdownCheck2">
+                                                Remember me
+                                                </label>
+                                            </div>
+                                        </div> 
+                                        <input type="submit" value="Ingresar" class="btn btn-primary">
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="registro_cliente.php">¿Eres nuevo? Registrese</a>
+                                        <a class="dropdown-item" href="cambiar_contraseña.php">¿Olvidaste tu contraseña?</a>
+                                    </form>
+                                </div>  
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-                <h1 class="m-0 display-5 text-uppercase text-primary"><img src="img/fast.png" width="75px">DELIVERY FASTER</h1>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-                    <a href="index.php" class="nav-item nav-link">Inicio</a>
-                    <a href="nosotros.php" class="nav-item nav-link">Nosotros</a>
-                    <a href="producto.php" class="nav-item nav-link">Producto</a>
-                    <a href="contacto.php" class="nav-item nav-link">Contacto</a>
-                </div>
-                <button href="login.php" type="button" class="btn btn-primary py-2 px-4 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#login">Iniciar Sesión</button>
-                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Iniciar Sesion</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="validacion_login.php" method="post">
-                                    <div class="row mb-3">
-                                        <label for="email" class="col-sm-2 col-form-label">Email: </label>
-                                        <div class="col-sm-10">
-                                        <input type="text" name="nick_usua" class="form-control" id="email" required>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="password_usua" class="col-sm-2 col-form-label">Contraseña: </label>
-                                        <div class="col-sm-10">
-                                        <input type="password" class="form-control" name="password_usua" id="password_usua" required>
-                                        </div>
-                                    </div>
-                                    <fieldset class="row mb-3">
-                                        <legend class="col-form-label col-sm-2 pt-0">Perfil: </legend>
-                                        <div class="col-sm-10">
-                                            <?php
-                                            include "conexiondb.php";
-                                            $select_perfil="SELECT * from perfil";
-                                            $datos_perfil=$db->query($select_perfil);
-                                            foreach($datos_perfil as $perfil)
-                                            {
-                                                if($perfil['estado_perf']==1)
-                                                {
-                                                    echo "
-                                                    <div class='form-check'>
-                                                        <input class='form-check-input' type='radio' name='perfil_usua' id='perfil".$perfil['id_perf']."' value='".$perfil['id_perf']."' requeried>
-                                                        <label class='form-check-label' for='perfil".$perfil['id_perf']."'>".$perfil['nombre_perf']."</label>
-                                                    </div>";
-                                                }
-                                            }
-                                            ?>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="mantenersesion">
-                                        <label class="form-check-label" for="mantenersesion">
-                                        Recordarme
-                                        </label>
-                                    </div>
-                                    <input type="submit" value="Iniciar Sesion" class="btn btn-success">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+    </header>
