@@ -1,9 +1,10 @@
 <?php
 // Varios destinatarios
-$para  = '2018110403@udh.edu.pe' . ', '.$nick;
+$para  = '2018110403@udh.edu.pe' . ', ';
+//$para.= "$nick";
 
 // título
-$título = 'Tu cuenta a sido registrado correctamente';
+$titulo = 'Tu cuenta a sido registrado correctamente';
 $codigo=rand(100000,99999);
 
 // mensaje
@@ -44,7 +45,7 @@ $cabeceras .= 'Bcc: birthdaycheck@example.com' . "\r\n";
 */
 // Enviarlo
 $confirmacion_enviado=false;
-if(mail($para, $título, $mensaje, $cabeceras))
+if(mail($para, $titulo, $mensaje, $cabeceras))
 {
     $confirmacion_enviado=true;
 }

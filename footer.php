@@ -1,4 +1,4 @@
-<div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+<div class="container-fluid bg-dark text-white mt-3 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
             <div class="col-lg-7 col-md-6">
                 <div class="row">

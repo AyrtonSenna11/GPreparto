@@ -24,6 +24,7 @@
                 </div>
                 <a href="cambiar_contraseña.php">Olvidé mi contraseña</a> <br>
                 <button type="submit" class="btn btn-primary">Ingresar</button>
+                <a class="btn btn-primary" href="registro_usuarios.php" role="button">Registrarce</a>
             </form>
         </div>
     </div>

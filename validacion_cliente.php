@@ -5,7 +5,7 @@ $contraseña=$_POST['password_usua'];
 session_start();
 $_SESSION['nick_usua']=$usuario;
 
-$select_consulta="SELECT * from usuarios where nick_usua='$usuario' and password_usua='$contraseña'";
+$select_consulta="SELECT * from usuarios where nick_usua='$usuario' and password_usua='$contraseña'and perfil_usua=5";
 $validacion=mysqli_query($db,$select_consulta);
 $filas=mysqli_num_rows($validacion);
 if($filas)

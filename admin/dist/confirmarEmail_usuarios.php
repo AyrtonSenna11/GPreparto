@@ -1,4 +1,5 @@
 <?php 
+$_GET['nick']="jahirjaguar_10@hotmail.com";
 if(isset($_GET['nick'])){
     $nick=$_GET['nick'];
 
@@ -21,14 +22,13 @@ if(isset($_GET['nick'])){
 <body>
     <div class="container">
         <div class="row justify-content-md-center" style="margin-top:15%">
-            <form class="col-3" action="verificar_usuarios.php" method="post">
+            <form class="col-3" action="verificar_codigo.php" method="post">
                 <h2>Verificar Cuenta</h2>
                 <div class="mb-3">
                     <label for="codigo" class="form-label">Código de Verificación</label>
                     <input type="number" class="form-control" id="codigo" name="codigo">
                     <input type="hidden" class="form-control" id="email" name="nick" value="<?php echo $nick;?>">
                 </div>
-               
                 <button type="submit" class="btn btn-success">Verificar</button>
             </form>
         </div>

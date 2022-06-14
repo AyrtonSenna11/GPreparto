@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - SB Admin</title>
+        <title>Login Usuarios</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -14,33 +14,37 @@
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
+                    <nav class="navbar bg-light p-0">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="../../index.php">
+                            <h1 class="m-0 text-uppercase px-4"><img src="../../img/fast.png" width="75px">  delivery faster</h1>
+                            </a>
+                        </div>
+                    </nav>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Inicio de Sesion</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form method="POST" action="validacion_usuarios.php">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
+                                                <input class="form-control" id="correo" type="email" name="nick_usua" placeholder="Correo Electronico" required>
+                                                <label for="correo">Correo Electronico</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                                <label for="inputPassword">Password</label>
+                                                <input type="password" class="form-control" id="contraseña" name="password_usua" placeholder="Contraseña" required>
+                                                <label for="contraseña">Contraseña</label>
                                             </div>
                                             <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
+                                                <a class="small" href="password.php">Olvide mi contraseña</a>
+                                                <button type="submit" class="btn btn-primary">Ingresar</button>
                                             </div>
                                         </form>
-                                    </div>
-                                    <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +56,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div class="text-muted">Copyright &copy; Grupo 4 - 2022</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
