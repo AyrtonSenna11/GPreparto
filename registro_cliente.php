@@ -42,7 +42,7 @@
                     <div class="col-md-3 position-relaive">
                         <label for="Sexo" class="form-label">Sexo: </label>
                         <select name="sexo_usua" id="Sexo" class="form-select">
-                            <option value=" " selected disabled>Eliga su sexo</option>
+                            <option value="" selected disabled>Eliga su sexo</option>
                             <option value="M">Masculino</option>
                             <option value="F">Femenino</option>
                         </select>

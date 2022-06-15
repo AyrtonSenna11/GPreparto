@@ -15,7 +15,7 @@ if($filas)
 {
     ?>
     <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
-        <strong>Datos incorrectos!</strong> Ingrese correctamente su correo, contraseña o perfil.
+        <strong>Datos incorrectos!</strong> Ingrese correctamente su correo o contraseña.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <?php include("index.php");

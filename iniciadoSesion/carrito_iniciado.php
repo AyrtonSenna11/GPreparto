@@ -1,6 +1,7 @@
 <?php 
-session_start();
-include "conexiondb.php";
+$active_navbar=5;
+include("header_iniciado.php");
+include "../conexiondb.php";
 if(isset($_SESSION['carrito'])){
 } else {
   if(isset($_GET['id_prod'])){
@@ -24,13 +25,12 @@ $rowProd=mysqli_fetch_assoc($resultado);
     $_SESSION['carrito']=$datos;
   }
 }
-$active_navbar=5;
-include("header.php");
+
 ?>
     <div class="bg-light py-3">
                 <div class="container">
                         <div class="row">
-                        <div  class="col-md-12 mb-0 fs-5"><a href="producto.php" class="text-danger" style="text-decoration: none;">Inicio</a> <span class="mx-2 mb-0">/</span>
+                        <div  class="col-md-12 mb-0 fs-5"><a href="producto_iniciado.php" class="text-danger" style="text-decoration: none;">Inicio</a> <span class="mx-2 mb-0">/</span>
                         <strong class="text-black">Productos</strong></div>
                         </div>
                 </div>
@@ -128,4 +128,4 @@ include("header.php");
         </div>
       </div>
 </div>
-<?php include("footer.php") ?>
+<?php include("footer_iniciado.php") ?>

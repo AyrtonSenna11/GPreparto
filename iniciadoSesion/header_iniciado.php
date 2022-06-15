@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -39,7 +40,7 @@
                 <div class="col-12 col-md-12 mw-100">
                     <nav class="navbar navbar-expand-md bg-light navbar-light py-3 py-lg-0 px-lg-5">
                         <h1 class="m-0 display-5 text-uppercase text-primary"><img src="../img/fast.png" width="75px">DELIVERY FASTER</h1>                            
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarNavDropdown" >
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
@@ -48,26 +49,25 @@
                                 <a href="nosotros_iniciado.php" class="nav-item nav-link <?php if($active_navbar==2){echo "active";} ?>"><i class="fa-solid fa-users"></i> Nosotros</a>
                                 <a href="producto_iniciado.php" class="nav-item nav-link <?php if($active_navbar==3){echo "active";} ?>"><i class="fa-solid fa-list"></i> Producto</a>
                                 <a href="contacto_iniciado.php" class="nav-item nav-link <?php if($active_navbar==4){echo "active";} ?>"><i class="fa-solid fa-headset"></i> Contacto</a>
-                                <a href="#" class="nav-item nav-link <?php if($active_navbar==5){echo "active";} ?>"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                                <a href="carrito_iniciado.php" class="nav-item nav-link <?php if($active_navbar==5){echo "active";} ?>"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
                                 <div class="dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <a class="nav-item nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                     <i class="fa-solid fa-user"></i> 
                                     <?php
-                                        session_start();
                                         include("../conexiondb.php");
-                                        $select_nombre="SELECT * from usuarios";
-                                        $datos_nombre=mysqli_query($db,$select_nombre);
-                                        foreach($datos_nombre as $nombre_usuario)
+                                        $select_cliente="SELECT * from usuarios";
+                                        $datos_cliente=mysqli_query($db,$select_cliente);
+                                        foreach($datos_cliente as $cliente)
                                         {
-                                            if($nombre_usuario['nick_usua']==$_SESSION['nick_usua'])
+                                            if($cliente['nick_usua']==$_SESSION['nick_usua'])
                                             {
-                                                echo $nombre_usuario['nombre_usua']." ".$nombre_usuario['apellidos_usua'] ;
+                                                echo $cliente['nombre_usua']." ".$cliente['apellidos_usua'] ;
                                             }
                                         }
                                     ?>
                                     </a>
                                     <ul class="dropdown-menu p-2 " aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                        <li><a class="dropdown-item" href="perfil_iniciado.php">Perfil</a></li>
                                         <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#cerrarsesion" role="button">Cerrar Sesion</a></li>
                                     </ul>  
                                 </div>

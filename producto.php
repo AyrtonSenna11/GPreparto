@@ -29,7 +29,7 @@
                                         <div class="btn-group">
                                             <a href="detalle_prod.php?id_prod=<?php echo $base['id_prod'];?> &token=<?php echo hash_hmac('sha1', $base['id_prod'], KEY_TOKEN); ?>" class="btn btn-primary"><i class="bi bi-ticket-detailed-fill"></i> Detalles</a>
                                         </div> 
-                                            <a href="" class="btn btn-success"><i class="bi bi-bag-fill"></i> Agregar</a>
+                                            <a href="carrito.php" class="btn btn-success"><i class="bi bi-bag-fill"></i> Agregar</a>
                                     </div>
                                 </div>
                             </div>
