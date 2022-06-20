@@ -1,0 +1,53 @@
+<?php
+include "conexiondb.php";
+$email = $_POST['cc_to'];
+$bytes = random_bytes(5);
+$codigo = bin2hex($bytes);
+$db->query("UPDATE usuarios set codigo_usua='$codigo'where nick_usua='$email'") or die($conexion->error);
+include("header.php") ?>
+<div class="alert alert-success d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+        <use xlink:href="#check-circle-fill" />
+    </svg>
+    <div>
+        Se envio un mensaje a tu correo electronico revise su bandeja o la seccion de Spam.
+    </div>
+    <div class="container">
+        <div class="row justify-content-md-center" style="margin-top:10%; margin-bottom:10%;">
+            <form class="col-3" id="enviaremail" method="post">
+                <h2>Restablecer Password</h2>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="email" name="cc_to" required>
+
+                </div>
+                <input type="submit" id="button" class="btn btn-primary" value="Restablecer">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('y_ElvjYidj4L-FVn-')
+        const btn = document.getElementById('button');
+
+        document.getElementById('enviaremail')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_8ji3fn8';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Restablecer';
+                        window.location.replace("true_enviado.php?<?php echo $_POST['cc_to']?>");
+                    }, (err) => {
+                        btn.value = 'Restablecer';
+                        window.location.replace("false_enviado.php");
+                    });
+            });
+    </script>
+    <?php include("footer.php");

@@ -10,6 +10,16 @@ $validacion=mysqli_query($db,$select_consulta);
 $filas=mysqli_num_rows($validacion);
 if($filas)
 {
+    /*foreach($validacion as $para_pefil)
+    {
+        if($_SESSION['nick_usua']==$para_pefil['nick_usua']){
+            if($para_pefil['perfil_usua']==5){
+                header("Location: iniciadoSesion/producto_iniciado.php");
+            }else{
+                header("Location: 401.php");
+            }
+        }
+    }*/
     header("Location: iniciadoSesion/producto_iniciado.php");
 }else
 {

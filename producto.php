@@ -2,7 +2,7 @@
     <main style="padding:30px 0;">
         <div class="container">
             <div class="text-center pb-2">
-                    <h6 class="text-dark text-uppercase font-weight-bold fs-1"><i class="fa-solid fa-bag-shopping"></i> Nuestros productos</h6>
+                    <h6 class="text-dark text-uppercase font-weight-bold fs-1"><i class="fa-solid fa-basket-shopping"></i> Nuestros productos</h6>
                     <h1 class="mb-4 fs-2">No lo encontrarás a mejor precio en otro lugar</h1>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-sm-3 row-cols-sm-4 g-5">

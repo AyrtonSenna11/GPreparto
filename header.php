@@ -73,7 +73,7 @@
                                         <input type="submit" value="Ingresar" class="btn btn-primary">
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="registro_cliente.php">¿Eres nuevo? Registrese</a>
-                                        <a class="dropdown-item" href="cambiar_contraseña.php">¿Olvidaste tu contraseña?</a>
+                                        <a class="dropdown-item" href="password.php">¿Olvidaste tu contraseña?</a>
                                     </form>
                                 </div>  
                             </div>
